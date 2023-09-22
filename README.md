@@ -47,9 +47,8 @@ content-type: application/json; charset=utf-8
 〜Postman〜
 <img width="1007" alt="スクリーンショット 2023-09-22 23 11 38" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/1a942f96-7e14-4d7f-beba-e16edcf7ace7">
 
-### GETリクエスト
- &emsp;ターミナルとPostmanを活用して個人アクセストークンを使ってプライベートな情報を取得<br>
- &emsp;下記のように表示結果は一致した。<br>
+### POSTリクエスト
+ 
 
 
  
