@@ -60,12 +60,12 @@ content-type: application/json; charset=utf-8
       }' \
 
 ```
-&emsp;結果、下記の通りになりました。
-・ステータスラインがHTTP/2 201<br>
-・レスポンスヘッダーのlocationの値のリンクがblogリポジトリになっている。<br>
-・created_at（作成日時）、updated_at（更新日時）がリクエストしたときの日時になっている。<br>
-・visibilityの値がprivate、privateの値がtrueになっている。<br>
-・レスポンスボディのhtml_urlの値のリンク先にアクセスするとblogリポジトリが表示される。<br>
+&emsp;結果、下記の通りになりました。<br>
+&emsp;&emsp;・ステータスラインがHTTP/2 201<br>
+&emsp;&emsp;・レスポンスヘッダーのlocationの値のリンクがblogリポジトリになっている。<br>
+&emsp;&emsp;・created_at（作成日時）、updated_at（更新日時）がリクエストしたときの日時になっている。<br>
+&emsp;&emsp;・visibilityの値がprivate、privateの値がtrueになっている。<br>
+&emsp;&emsp;・レスポンスボディのhtml_urlの値のリンク先にアクセスするとblogリポジトリが表示される。<br>
 ```
 HTTP/2 201
 ...
@@ -91,7 +91,24 @@ location: https://api.github.com/repos/yamahiro20639/blog
 &emsp;結果、リポジトリの登録完了。
 <img width="1433" alt="スクリーンショット 2023-09-24 16 02 59" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/380ba783-7538-42a0-9971-7decf1800c7d">
 
-
+### PATCHリクエスト
+&emsp;下記コマンドでリポジトリの内容変更を実施。<br>
+&emsp;&emsp;・リポジトリ名をblogからhello-world-blogに変更する<br>
+&emsp;&emsp;・privateをpublicに変更<br>
+&emsp;&emsp;・Aboutを"This is your blog repository"に変更<br>
+&emsp;&emsp;・ホームページに"https://github.com" を設定<br>
+```
+% curl -i -X PATCH \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: token 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" \
+  https://api.github.com/repos/your_username/repository_name \
+  -d '{
+    "name":"hello-world-blog",
+    "description":"This is your blog repository",
+    "homepage":"https://github.com",
+    "private":false
+  }'
+```
 
 
  
