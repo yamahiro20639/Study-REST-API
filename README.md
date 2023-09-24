@@ -109,6 +109,31 @@ location: https://api.github.com/repos/yamahiro20639/blog
     "private":false
   }'
 ```
+&emsp;実行結果は下記の通りになりました。GitHubでも変更確認できました。<br>
+```
+HTTP/2 200
+server: GitHub.com
+...
+
+{
+  ...
+  "name": "hello-world-blog",
+  ...
+  "private": false,
+  ...
+  "html_url": "https://github.com/yamahiro20639/hello-world-blog",
+  "description": "This is your blog repository",
+  ...
+  "created_at": "2023-09-24T06:26:50Z",
+  "updated_at": "2023-09-24T08:26:42Z",
+  ...
+  "homepage": "https://github.com",
+  ...
+  "visibility": "public",
+  ...
+```
+<img width="1116" alt="スクリーンショット 2023-09-24 17 32 28（2）" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/21604a0c-58af-4994-bc0e-cde836ad241d">
+
 
 
  
