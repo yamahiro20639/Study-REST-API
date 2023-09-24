@@ -48,7 +48,44 @@ content-type: application/json; charset=utf-8
 <img width="1007" alt="スクリーンショット 2023-09-22 23 11 38" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/1a942f96-7e14-4d7f-beba-e16edcf7ace7">
 
 ### POSTリクエスト
- 
+&emsp;下記コマンドでリポジトリの登録を実施。<br>
+```
+% curl -i -X POST \
+    -H "Authorization: token 個人アクセストークン" \
+    -d '{
+        "name": "blog",
+        "auto_init": true,
+        "private": true,
+        "gitignore_template": "Nanoc"
+      }' \
+
+```
+&emsp;結果、下記の通りになりました。
+・ステータスラインがHTTP/2 201<br>
+・レスポンスヘッダーのlocationの値のリンクがblogリポジトリになっている。<br>
+・created_at（作成日時）、updated_at（更新日時）がリクエストしたときの日時になっている。<br>
+・visibilityの値がprivate、privateの値がtrueになっている。<br>
+・レスポンスボディのhtml_urlの値のリンク先にアクセスするとblogリポジトリが表示される。<br>
+```
+HTTP/2 201
+...
+location: https://api.github.com/repos/yamahiro20639/blog
+{
+...
+"name": "blog",
+...
+"private": true,
+...
+"html_url": "https://github.com/yamahiro20639/blog",
+...
+"created_at": "2023-09-24T06:26:50Z",
+"updated_at": "2023-09-24T06:26:51Z",
+...
+ "visibility": "private",
+...
+
+```
+<img width="1434" alt="スクリーンショット 2023-09-24 15 47 28" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/b7c90653-398e-4448-84a3-035d72a3f26c">
 
 
  
