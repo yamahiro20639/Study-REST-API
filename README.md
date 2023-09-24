@@ -1,6 +1,8 @@
 # REST API
  ## 概要
  &emsp;ハンズを参考にREST APIの操作方法を学びました。
+
+
   ### GETリクエスト
  &emsp;ターミナルとPostmanを活用して個人アクセストークンを使ってプライベートな情報を取得<br>
  &emsp;下記のように表示結果は一致した。<br>
@@ -47,6 +49,7 @@ content-type: application/json; charset=utf-8
 〜Postman〜
 <img width="1007" alt="スクリーンショット 2023-09-22 23 11 38" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/1a942f96-7e14-4d7f-beba-e16edcf7ace7">
 
+
 ### POSTリクエスト
 &emsp;下記コマンドでリポジトリの登録を実施。<br>
 ```
@@ -91,6 +94,7 @@ location: https://api.github.com/repos/yamahiro20639/blog
 &emsp;結果、リポジトリの登録完了。
 <img width="1433" alt="スクリーンショット 2023-09-24 16 02 59" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/380ba783-7538-42a0-9971-7decf1800c7d">
 
+
 ### PATCHリクエスト
 &emsp;下記コマンドでリポジトリの内容変更を実施。<br>
 &emsp;&emsp;・リポジトリ名をblogからhello-world-blogに変更する<br>
@@ -133,6 +137,11 @@ server: GitHub.com
   ...
 ```
 <img width="1116" alt="スクリーンショット 2023-09-24 17 32 28（2）" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/21604a0c-58af-4994-bc0e-cde836ad241d">
+
+
+&emsp;下記Postmanでもリポジトリ(blog2)の内容変更を実施。<br>
+&emsp;結果は下記の通り、ステータスコード２００で変更できました。<br>
+<img width="1436" alt="スクリーンショット 2023-09-24 17 55 27" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/9e92a3ab-1a65-4d73-8c8b-69e402e70477">
 
 
 
