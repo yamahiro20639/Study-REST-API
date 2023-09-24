@@ -87,6 +87,12 @@ location: https://api.github.com/repos/yamahiro20639/blog
 ```
 <img width="1434" alt="スクリーンショット 2023-09-24 15 47 28" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/b7c90653-398e-4448-84a3-035d72a3f26c">
 
+&emsp;下記Postmanでもリポジトリの登録を実施。<br>
+&emsp;結果、リポジトリの登録完了。
+<img width="1433" alt="スクリーンショット 2023-09-24 16 02 59" src="https://github.com/yamahiro20639/Study-REST-API/assets/144509349/380ba783-7538-42a0-9971-7decf1800c7d">
+
+
+
 
  
  　
